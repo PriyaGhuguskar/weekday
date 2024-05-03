@@ -1,12 +1,8 @@
 import React, { useState } from 'react'
-import { Card, CardContent, Typography, Button, Skeleton } from "@mui/material";
-import LightningBoltIcon from "@mui/icons-material/FlashOn";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import logo from '../asset/logo.jpeg'
+import { Typography } from "@mui/material";
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -33,7 +29,6 @@ const JobDiscription = (props) => {
     const characters = props?.text?.split('');
     const visibleText = characters.slice(0, MAX_VISIBLE_CHARACTERS).join('');
     const blurredText = characters.slice(MAX_VISIBLE_CHARACTERS, MAX_VISIBLE_CHARACTERS + BLURRED_CHARACTERS).join('');
-    const remainingText = characters.slice(MAX_VISIBLE_CHARACTERS,).join('');
 
     return (
         <div>
