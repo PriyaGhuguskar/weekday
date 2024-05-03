@@ -1,31 +1,14 @@
-import React, { useState } from "react";
-import { Card, CardContent, Typography, Button, Skeleton } from "@mui/material";
+import React from "react";
+import { Card, CardContent, Typography, Button } from "@mui/material";
 import LightningBoltIcon from "@mui/icons-material/FlashOn";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import logo from '../asset/logo.jpeg'
-import { styled } from '@mui/material/styles';
-import IconButton from '@mui/material/IconButton';
-import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
 import JobDiscription from "./JobDiscription";
 
-const ExpandMore = styled((props) => {
-    const { expand, ...other } = props;
-    return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-        duration: theme.transitions.duration.shortest,
-    }),
-}));
 
 const JobCard2 = (props) => {
 
-    const [expanded, setExpanded] = useState(false);
 
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
 
     //Calculate Salary
     const getSalary = (minSalary, maxSalary, currencyCode) => {
@@ -179,16 +162,7 @@ const JobCard2 = (props) => {
 export default JobCard2
 
 
-const StyledCard = {
-    width: 350,
-    height: 700,
-    maxHeight: 700,
-    borderRadius: 16,
-    boxShadow: "1px 1px 1px 1px rgba(126, 125, 125, 0.06)",
-    border: "0.5px solid rgb(198, 198, 198)",
-    padding: 10,
-    margin: 16,
-};
+
 
 const StyledButton = {
     backgroundColor: "#54efc3",
@@ -212,14 +186,6 @@ const UnlockButton = {
     marginTop: "5%",
 };
 
-const CenteredButton = {
-    display: "block",
-    margin: "0 auto",
-
-    backgroundColor: "transparent",
-    border: "0px",
-    textTransform: "none",
-};
 
 const a = {
     fontWeight: "1rem",
