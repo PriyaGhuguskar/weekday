@@ -17,6 +17,7 @@ const JobCard = () => {
             setData([...data, ...res.data.jdList]);
         }
         fetchJobs();
+        // eslint-disable-next-line
     }, [offset]);
 
     const handleInfiniteScroll = async () => {

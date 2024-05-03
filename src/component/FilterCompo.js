@@ -24,9 +24,9 @@ const FilterCompo = ({ role, setRole, location, setLocation, company, setCompany
         "Chennai",
         "Bangalore",
     ];
-    const NoOfEmployee = [
-        '1-10', '11-20', '21-50', '51-200', '500+'
-    ]
+    // const NoOfEmployee = [
+    //     '1-10', '11-20', '21-50', '51-200', '500+'
+    // ]
 
     return (
         <div className='flex gap-2'>
