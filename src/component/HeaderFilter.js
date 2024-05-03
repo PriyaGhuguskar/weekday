@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import MultipleSelec from './MultipleSelec'
 import FilterCompo from './FilterCompo';
 const HeaderFilter = () => {
     const [role, setRole] = useState([]);
