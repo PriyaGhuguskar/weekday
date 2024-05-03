@@ -1,0 +1,34 @@
+.jobsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+    .jobsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .jobsContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cardDiv {
+    /* max-height: 700px !important; */
+
+    width: 250;
+    height: 500;
+
+    border-radius: 16;
+    box-shadow: "1px 1px 1px 1px rgba(126, 125, 125, 0.06)";
+    border: "0.5px solid rgb(198, 198, 198)";
+    padding: 20;
+    margin: 20;
+    gap: 30px;
+
+}
